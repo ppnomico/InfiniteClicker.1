@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#917E79"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/colourImageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:contentDescription="An Image of a colour wheel"
+        android:src="@drawable/colour_wheel"
+        android:onClick="True"/>
+
+    <ImageView
+        android:id="@+id/settingsButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:contentDescription="An Image of a settings icon"
+        android:src="@drawable/settings"
+        android:onClick="True"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total_click_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="Total Click Count: "
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/clickCountView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/clickMeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/purple_200"
+            android:padding="50dp"
+            android:text="Click Me"
+            android:textSize="40sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
